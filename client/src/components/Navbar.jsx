@@ -3,7 +3,8 @@ import { FaShoppingCart, FaUser, FaHome } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState,useEffect } from "react";
 import { useContext } from "react";
-import AuthProvider from './context/AuthContext.jsx';
+import AuthProvider from "../context/authContext";
+
 
 const Navbar = () => {
 

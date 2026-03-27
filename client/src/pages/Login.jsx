@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import API from "../services/api";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import AuthProvider from './context/AuthContext.jsx';
+import AuthProvider from "../context/authContext";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
