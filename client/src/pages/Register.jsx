@@ -24,7 +24,7 @@ const Register = () => {
             return;
         }
         try {
-            const { data } = await API.post("/api/auth/register", formData);
+            const { data } = await API.post("/auth/register", formData);
             localStorage.setItem("token", data.token);
             toast.success("Registration successful 🎉");
             navigate("/login");
