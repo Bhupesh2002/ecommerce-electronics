@@ -31,6 +31,7 @@ const Login = () => {
     } catch (error) {
       const message = error.response?.data?.message || "Login failed";
       toast.error(message);
+      console.log("ENV:", import.meta.env.VITE_API_URL);
     }   
   };
 
