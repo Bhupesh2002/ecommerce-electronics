@@ -3,13 +3,13 @@ import { FaShoppingCart, FaUser, FaHome } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState,useEffect } from "react";
 import { useContext } from "react";
-import AuthProvider from "../context/AuthContext";
+import { AuthContext } from "../context/AuthContext";
 
 const Navbar = () => {
 
   const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const { userToken, logout } = useContext(AuthProvider);
+  const { userToken, logout } = useContext(AuthContext);
 
   useEffect(() => {
     const checkAuth = () => {

@@ -2,14 +2,14 @@ import { useContext, useState } from "react";
 import API from "../services/api";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import AuthProvider from "../context/AuthContext"
+import { AuthContext } from "../context/AuthContext"
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
 
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
-  const { login } = useContext(AuthProvider);
+  const { login } = useContext(AuthContext);
   const [formData, setFormData] = useState({
     email:"",
     password:"",
